@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="656.0" prefWidth="800.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextArea fx:id="sourceText" layoutX="14.0" layoutY="86.0" prefHeight="229.0" prefWidth="858.0" />
+            <TextArea fx:id="resultText" layoutX="14.0" layoutY="328.0" prefHeight="238.0" prefWidth="858.0" />
+            <TextField fx:id="keyText" layoutX="14.0" layoutY="594.0" prefHeight="26.0" prefWidth="326.0" promptText="Key" />
+            <MenuButton fx:id="fileMenuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="methodMenuButton" layoutX="637.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Method">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </MenuButton>
+            <Label fx:id="Lab01" layoutX="378.0" layoutY="27.0" text="Lab01">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <SplitMenuButton fx:id="buttonActon" layoutX="698.0" layoutY="581.0" mnemonicParsing="false" onAction="#buttonActionClicked" prefHeight="46.0" prefWidth="161.0" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
