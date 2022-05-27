@@ -13,14 +13,8 @@ import java.util.List;
 
 public class Runner {
     public static void main(String[] args) throws DalException, ServiceException {
-//        List<Integer> list = new ArrayList<>();
-//        list.add(10);
-//        list.add(15);
-//        list.add(25);
-        IOFileDal ioFileDal = new IOFileDalImpl();
-//        ioFileDal.writeListIntegerToFile("src/resources/testList", list);
-        ioFileDal.writeListIntegerToFile("src/resources/testList", null);
-
-//        System.out.println(ioFileDal.readListIntegerFromFile("src/resources/testList"));
+        String str = "test\n adawdaw  adawda \n qdawdaw213213 asd \n23 34";
+        String[] test = str.split("[\n ]");
+        System.out.println(test);
     }
 }
